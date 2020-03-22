@@ -1,6 +1,21 @@
 #include <iostream>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+using namespace std;
+int wiek;
+int main()
+{
+    cout << "Ile masz lat: ";
+    cin >> wiek;
+    if (wiek<18){
+        cout<<"Jestes niepelnoletni i nie mozesz kandydowac";
+    }
+    else if ((wiek>=18)&&(wiek<35)){
+        cout<<"Jestes pelnoletni i nie mozesz kandydowac";
+    }
+
+    else
+    {
+        cout<<"Jestes pelnoletni i mozesz kandydowac na prezydenta";
+    }
     return 0;
 }
